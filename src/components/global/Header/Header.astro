@@ -1,0 +1,42 @@
+<header>
+  <img
+    src="https://live.staticflickr.com/65535/52730479681_15794f8067_m.jpg"
+    alt="TheBox logo"
+    width="163"
+    height="47"
+  />
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Projects</a>
+    <a href="#">Services</a>
+    <button>Contact Us</button>
+  </nav>
+</header>
+<style lang="postcss" is:global>
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 110px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    > a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #14171f;
+      text-decoration: none;
+    }
+    > button {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #f9995d;
+      background-color: transparent;
+      border: none;
+    }
+  }
+</style>
