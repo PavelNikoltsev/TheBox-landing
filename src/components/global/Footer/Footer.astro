@@ -1,0 +1,137 @@
+<footer>
+  <div class="footer-top wrap">
+    <div class="footer-top-contacts">
+      <div class="footer-top-contacts-info">
+        <div>
+          <p>Address:</p>
+          <p>Phone:</p>
+          <p>Email:</p>
+        </div>
+        <div>
+          <p>6391 Elgin St. Celina, Delaware 10299</p>
+          <p>+84 1102 2703</p>
+          <p>hello@thebox.com</p>
+        </div>
+      </div>
+      <img src="/src/assets/images/the-box-logo.png" alt="TheBox logo" />
+    </div>
+    <div class="footer-top-form">
+      <div class="footer-top-form-newsletter">
+        <p>Newsletter:</p>
+        <form>
+          <input type="text" placeholder="Your email here" required />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+      <div class="footer-top-form-socials">
+        <p>Social:</p>
+        <div>
+          <a href="#">
+            <img
+              src="/src/assets/images/social-facebook.png"
+              alt="facebook logo image"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/assets/images/social-linkedin.png"
+              alt="linkedin logo image"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/assets/images/social-twitter.png"
+              alt="twitter logo image"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom wrap">
+    <p>TheBox Company © 2023. All Rights Reserved</p>
+  </div>
+</footer>
+<style lang="postcss" is:global>
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 80px;
+    &-contacts {
+      display: grid;
+      gap: 32px;
+      &-info {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 12px;
+        p {
+          padding: 16px 0;
+        }
+        p:first-child {
+          padding-top: 0;
+        }
+        div:first-of-type {
+          text-transform: uppercase;
+          color: #2947a9;
+          font-weight: 500;
+        }
+      }
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-newsletter {
+        p {
+          text-transform: uppercase;
+          color: #2947a9;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        form {
+          display: flex;
+          gap: 8px;
+          input:first-of-type {
+            padding: 10px 8px;
+            border: 1px solid #e0e3eb;
+            border-radius: 4px;
+          }
+          input:last-of-type {
+            border-radius: 4px;
+            border-color: transparent;
+            background-color: #f9995d;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0 24px;
+          }
+        }
+      }
+      &-socials {
+        p {
+          text-transform: uppercase;
+          color: #2947a9;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        > div {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background-color: #2947a9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #fff;
+  }
+</style>

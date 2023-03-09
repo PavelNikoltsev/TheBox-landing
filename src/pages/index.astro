@@ -1,10 +1,27 @@
 ---
 import Layout from "../Layouts/Layout.astro";
+import HeroSection from "../components/general/HeroSection.vue";
+import Test from "../components/general/Test.vue";
+const items = [
+  {
+    name: "The National University of Architecture",
+    src: "/src/assets/images/hero/hero-1.jpg",
+  },
+  {
+    name: "UAE Pavilion Expo 2020",
+    src: "/src/assets/images/hero/hero-2.webp",
+  },
+  {
+    name: "Heydar Aliyev Center",
+    src: "/src/assets/images/hero/hero-3.webp",
+  },
+];
 ---
 
 <Layout
   title="TheBox"
   description="Delivering world-class construction for more than 30 years."
 >
-  Hello
+  <!-- <HeroSection client:visible items={items} /> -->
+  <Test client:visible />
 </Layout>
